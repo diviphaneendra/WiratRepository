@@ -1,0 +1,17 @@
+{
+	"name": "linkedService1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=True;data source=LP-5CD824FPFT;initial catalog=DEMODB_V20",
+			"userName": "v-divip@microsoft.com",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIwNTllY2VhZC1jMzlmLTQ2ZGMtOWZhMC0zZjMyYmJkMjc0Y2UiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "IR-ADF-DEV",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

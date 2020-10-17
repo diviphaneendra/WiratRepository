@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
+				"fileName": "SPResult",
 				"folderPath": "OUT",
 				"container": "adfdev"
 			}
