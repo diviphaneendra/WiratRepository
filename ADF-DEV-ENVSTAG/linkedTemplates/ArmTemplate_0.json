@@ -56,7 +56,7 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/DS_OUTEmployee')]",
+			"name": "[concat(parameters('factoryName'), '/DS_DepartmentData')]",
 			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
 			"properties": {
@@ -69,7 +69,8 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobStorageLocation",
-						"folderPath": "OUT",
+						"fileName": "Test2.csv",
+						"folderPath": "Input",
 						"container": "adfdev"
 					}
 				}
@@ -92,8 +93,31 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobStorageLocation",
-						"fileName": "employeeInfo.txt",
+						"fileName": "TestData1.csv",
 						"folderPath": "Input",
+						"container": "adfdev"
+					}
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/ls_StorageAccount')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/DS_OUTEmployee')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "ls_StorageAccount",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "Binary",
+				"typeProperties": {
+					"location": {
+						"type": "AzureBlobStorageLocation",
+						"folderPath": "OUT",
 						"container": "adfdev"
 					}
 				}
@@ -155,8 +179,7 @@
 						]
 					}
 				],
-				"annotations": [],
-				"lastPublishTime": "2020-10-17T06:18:32Z"
+				"annotations": []
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/DS_EmployeeData')]",
