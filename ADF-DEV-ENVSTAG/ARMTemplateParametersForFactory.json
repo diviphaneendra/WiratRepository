@@ -1,0 +1,15 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "ADF-DEV-ENVSTAG"
+		},
+		"ls_AKV_StorageAccount_properties_typeProperties_baseUrl": {
+			"value": "https://KV-dev-Practice.vault.azure.net/"
+		},
+		"ls_StorageAccount_properties_typeProperties_connectionString_secretName": {
+			"value": "sk-sa-dev"
+		}
+	}
+}
