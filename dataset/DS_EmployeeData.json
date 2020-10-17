@@ -1,0 +1,19 @@
+{
+	"name": "DS_EmployeeData",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_StorageAccount",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "employeeInfo.txt",
+				"folderPath": "Input",
+				"container": "adfdev"
+			}
+		}
+	}
+}
