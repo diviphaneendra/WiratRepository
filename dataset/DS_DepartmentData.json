@@ -1,5 +1,5 @@
 {
-	"name": "DS_EmployeeData",
+	"name": "DS_DepartmentData",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ls_StorageAccount",
@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "TestData1.csv",
+				"fileName": "Test2.csv",
 				"folderPath": "Input",
 				"container": "adfdev"
 			}
