@@ -5,6 +5,15 @@
 		"factoryName": {
 			"value": "ADF-DEV-ENVSTAG"
 		},
+		"linkedService1_connectionString": {
+			"value": ""
+		},
+		"linkedService1_password": {
+			"value": ""
+		},
+		"linkedService1_properties_typeProperties_userName": {
+			"value": "v-divip@microsoft.com"
+		},
 		"ls_AKV_StorageAccount_properties_typeProperties_baseUrl": {
 			"value": "https://KV-dev-Practice.vault.azure.net/"
 		},
